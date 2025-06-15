@@ -1,5 +1,5 @@
 import { ArrowRight, Mail, FileText, Github, Linkedin } from 'lucide-react';
-
+import resume from '../../resume.pdf'; // adjust path as needed
 const Hero = () => {
   return (
     <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-24 text-center">
@@ -37,7 +37,7 @@ const Hero = () => {
             icon={<Mail className="h-5 w-5" />}
           />
           <ActionButton 
-            href="resume.pdf"
+            href="{resume}"
             primary={false}
             text="Download Resume"
             icon={<FileText className="h-5 w-5" />}
